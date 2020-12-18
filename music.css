@@ -1,0 +1,24 @@
+/* Masthead sizing */
+.masthead.segment {min-height: 775px;}
+
+/* Font sizing for main content title */
+.masthead h1.ui.header {margin-top: 2em; margin-bottom: 0em; font-size: 4em; font-weight: bold; color:rgb(188, 55, 200)}
+
+/* Font sizing for main content description */
+.masthead h2 {font-size: 1.5em; font-weight: bold; color:rgb(188,54,202)}
+
+/* Padding for description container */
+.ui.vertical.stripe {padding: 4em 0em;}
+
+/* Font size for description header */
+.ui.vertical.stripe h3 {font-size: 2em;}
+
+/* Font size for description */
+.ui.vertical.stripe p {font-size: 1.5em;}
+
+/* Background Image */
+.masthead {background-image: url('assets/Elements.jpg') !important; background-size:  cover !important;}
+
+/* Easing Out Transition */
+*, *::before, *::after{transition:all 1.2s ease-in-out;}
+#navbar form *{transition:none !important;}
