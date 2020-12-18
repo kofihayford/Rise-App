@@ -4,11 +4,11 @@
 <title>Rise</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<link href="breathing.css" rel="stylesheet" type="text/css" media="all">
 <!-- Semantic UI CSS  -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-</head>
 
+</head>
 <!-- Nav Bar -->
 <body id="top">
   <div class="bgded overlay" src="assets/blackwallpaper">
@@ -17,14 +17,11 @@
       <div id="logo" class="fl_left">
         <h1><a href="index.html">Rise</a></h1>
       </div>
-        <nav id="navbar" class="fl_right">
-         <ul class="clear">
-           <li class="active"><a href="index.html">Home</a></li>
-           <li><a href="#">Breathing App</a></li>
-           <li><a href="#">My Mantras</a></li>
-           <li><a href="#">My Music</a></li>
-         </ul>
-       </nav>
+        <div class="ui four item menu">
+          <a class="active item">Home</a>
+          <a class="item" href="#">Breathing App</a>
+          <a class="item"href="#">My Mantras</a>
+          <a class="item"href="#">My Music</a>
       </header>
     </div>
   </div>  
@@ -33,11 +30,12 @@
   <div class="bgded overlay" src="assets/blackwallpaper">
   <div id="pageintro" class="hoc transparent"> 
     <article>
-      <h3 class="heading">Today I want:</h3>
+      <br>
+      <h3 class="ui header">Today I want:</h3>
       <footer>
         <form class="group" method="post" action="#">
-            <a class="btn btn-lg btn-primary" href="#" role="button">Breathing Techniques</a>
-            <a class="btn btn-lg btn-primary" href="#" role="button">Mantras</a>
+            <button class="ui olive button">Breathing Techniques</button>
+            <button class="ui white button">Mantras</button>
         </form>
       </footer>
     </article>
@@ -47,11 +45,12 @@
   <!-- Yoga Search Bar Div -->
   <div>
     <div class="" src="assets/blackwallpaper">
-      <h6 class="heading">Search Yoga Videos:</h6>
+      <br>
+      <h4 class="ui header">Search Yoga Videos:</h4>
       <p>Sem eu tincidunt magna nulla eu turpis mauris eget ante fusce pharetra sodales arcu sed rutrum ipsum a ipsum.</p>
-          <input class = "searchBar" type="text" placeholder="Search"> &nbsp; 
-          <button type="submit"><i class="search"></i></button>
-          </form>
+          <input class = "ui input" type="text" placeholder="Search..."> &nbsp; 
+          <button class="ui positive basic button">Search</button>
+        </form>
      </div>
   </div>
 
@@ -62,29 +61,29 @@
     <!-- Mantra Title -->
     <section id="yourMantras">
       <div class="sectiontitle">
-        <h6 class="heading">Your Mantras</h6>
+        <h4 class="ui header">Your Mantras</h4>
         <p>Urna sed augue class aptent taciti sociosqu ad litora torquent</p>
       </div>
       <!-- The 4 Elements Mantras -->
       <ul class="nospace group">
         <li class="water first">
-            <h6 class="heading">Water Mantra</h6>
-            <p>Per conubia nostra per mauris aliquet massa nulla facilisi porta ligula non elementum</p>
+            <h4 class="ui header">Water Mantra</h4>
+            <p>Per conubia nostra per mauris aliquet massa nulla facilisi porta ligula non elementum</p><br>
           </article>
         </li>
         <li class="water">
-            <h6 class="heading">Earth Mantra</h6>
-            <p>Ultricies justo urna egestas metus ut ornare leo augue pharetra risus morbi tincidunt massa</p>
+            <h4 class="ui header">Earth Mantra</h4>
+            <p>Ultricies justo urna egestas metus ut ornare leo augue pharetra risus morbi tincidunt massa</p><br>
           </article>
         </li>
         <li class="water">
-            <h6 class="heading">Fire Mantra</h6>
-            <p>Ac vestibulum rutrum orci augue iaculis nibh quis porta nunc nisi suscipit leo nam ac lacus</p>
+            <h4 class="ui header">Fire Mantra</h4>
+            <p>Ac vestibulum rutrum orci augue iaculis nibh quis porta nunc nisi suscipit leo nam ac lacus</p><br>
           </article>
         </li>
         <li class="water">
-            <h6 class="heading">Air Mantra</h6>
-            <p>Cras tempor ultricies urna aliquam massa sapien posuere in iaculis adipiscing vulputate</p>
+            <h4 class="ui header">Air Mantra</h4>
+            <p>Cras tempor ultricies urna aliquam massa sapien posuere in iaculis adipiscing vulputate</p><br>
         </li>
       </ul>
      </section>
