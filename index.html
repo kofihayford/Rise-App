@@ -4,93 +4,99 @@
 <title>Rise</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="breathing.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="style.css">
 <!-- Semantic UI CSS  -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 
 </head>
-<!-- Nav Bar -->
-<body id="top">
-  <div class="bgded overlay" src="assets/blackwallpaper">
-    <div class="wrapper row1">
-     <header id="header" class="hoc clear"> 
-      <div id="logo" class="fl_left">
-        <h1><a href="index.html">Rise</a></h1>
+
+<body id="main">
+  <!-- Create the NavBar here-->
+  <div class="NavBar">
+    <div class="ui inverted vertical masthead center aligned segment">
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="active item">Rise</a> 
+          <div class="right item">
+            <a class="item">Breathing App</a>
+            <a class="item">My Mantras</a> 
+            <a class="item">My Music</a>
+            <a class="item">My To-Do List</a>
+          </div>
+        </div>
       </div>
-        <div class="ui four item menu">
-          <a class="active item">Home</a>
-          <a class="item" href="#">Breathing App</a>
-          <a class="item"href="#">My Mantras</a>
-          <a class="item"href="#">My Music</a>
-      </header>
+    
+    <!-- Adding Background Video -->
+    <div class="container">
+          <video id="videoBG" autoplay muted loop>
+            <source src="assets/AvatarAang.mov" type="video/mp4">
+          </video>
+        <div class="leftcontent">
+          <h1 class="ui small header">Welcome to Rise</h1>
+            <p>Your Daily Meditation App</p>
+        </div>
+        <div class="rightcontent">
+          <h1 class="ui small header">Today I want:</h1>
+            <button class="ui left attached button">Breathing Techniques</button>
+            <button class="right attached ui button">Mantras</button>
+        </div>
     </div>
-  </div>  
-  
-  <!-- Main Headline Div -->
-  <div class="bgded overlay" src="assets/blackwallpaper">
-  <div id="pageintro" class="hoc transparent"> 
-    <article>
-      <br>
-      <h3 class="ui header">Today I want:</h3>
-      <footer>
-        <form class="group" method="post" action="#">
-            <button class="ui olive button">Breathing Techniques</button>
-            <button class="ui white button">Mantras</button>
-        </form>
-      </footer>
-    </article>
-  </div>  
-  </div>
 
-  <!-- Yoga Search Bar Div -->
-  <div>
-    <div class="" src="assets/blackwallpaper">
-      <br>
-      <h4 class="ui header">Search Yoga Videos:</h4>
-      <p>Sem eu tincidunt magna nulla eu turpis mauris eget ante fusce pharetra sodales arcu sed rutrum ipsum a ipsum.</p>
-          <input class = "ui input" type="text" placeholder="Search..."> &nbsp; 
-          <button class="ui positive basic button">Search</button>
-        </form>
-     </div>
-  </div>
+    <!-- Yoga Search Bar Div -->
+    <div>
+      <div class="yogaBar" src="assets/blackwallpaper">
+        <br>
+        <h2 class="ui huge header">Search Yoga Videos:</h2>
+        <p>Sem eu tincidunt magna nulla eu turpis mauris eget ante fusce pharetra sodales arcu sed rutrum ipsum a ipsum.</p>
+            <input class = "ui input" type="text" placeholder="Search...">&nbsp; 
+            <button class="ui positive basic button">Search</button>
+          </form>
+      </div>
+    </div>
 
-
-<!-- Your Mantras Container -->
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!-- Mantra Title -->
-    <section id="yourMantras">
-      <div class="sectiontitle">
-        <h4 class="ui header">Your Mantras</h4>
+  <!-- Mantra Title -->
+    <div>
+      <div class="mantraBar">
+        <h3 class="ui huge header">Your Mantras</h3>
         <p>Urna sed augue class aptent taciti sociosqu ad litora torquent</p>
       </div>
-      <!-- The 4 Elements Mantras -->
-      <ul class="nospace group">
-        <li class="water first">
-            <h4 class="ui header">Water Mantra</h4>
-            <p>Per conubia nostra per mauris aliquet massa nulla facilisi porta ligula non elementum</p><br>
-          </article>
-        </li>
-        <li class="water">
-            <h4 class="ui header">Earth Mantra</h4>
-            <p>Ultricies justo urna egestas metus ut ornare leo augue pharetra risus morbi tincidunt massa</p><br>
-          </article>
-        </li>
-        <li class="water">
-            <h4 class="ui header">Fire Mantra</h4>
-            <p>Ac vestibulum rutrum orci augue iaculis nibh quis porta nunc nisi suscipit leo nam ac lacus</p><br>
-          </article>
-        </li>
-        <li class="water">
-            <h4 class="ui header">Air Mantra</h4>
-            <p>Cras tempor ultricies urna aliquam massa sapien posuere in iaculis adipiscing vulputate</p><br>
-        </li>
-      </ul>
-     </section>
-    <div class="clear"></div>
-  </main>
-</div>
-<!-- Added JS connection to Semantic UI -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </div>
+
+    <section id="yourMantras">
+      <div class="ui four column grid container">
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/water.png">
+          </div>
+          <h4 class="ui large blue header">Water Mantra</h4>
+          <p>Per conubia nostra per mauris aliquet massa Korra facilisi porta ligula non elementum tru leviosa</p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/earth.png">
+          </div>
+          <h4 class="ui large brown header">Earth Mantra</h4>
+          <p>Ultricies justo urna egestas metus ut ornare leo augue pharetra Bolin morbi tincidunt sen massa</p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/fire.png">
+          </div>
+          <h4 class="ui large red header">Fire Mantra</h4>
+          <p>Ac vestibulum rutrum orci augue iaculis nibh quis porta seulso nisi Mako leo nam ac nin lacus</p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/air.png">
+          </div>
+          <h4 class="ui large header">Air Mantra</h4>
+          <p>Cras tempor ultricies urna aliquam Tenzin sapien massa in iaculis adipiscing ela vulputate</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Added JS connection to Semantic UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  
 </body>
 </html>
