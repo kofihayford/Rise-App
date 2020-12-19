@@ -7,6 +7,10 @@ const holdTime = totalTime / 5;
 
 // console.log(breatheTime, holdTime);
 
+window.onload = function () {
+  document.getElementById("ambient").play();
+};
+
 breathAnimation();
 
 function breathAnimation() {
