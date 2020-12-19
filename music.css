@@ -12,7 +12,7 @@ body {background-color: black;}
 .masthead h1.ui.header {margin-top: 2em; font-size: 4em; font-weight: bold; color:black}
 
 /* Font sizing for main content description */
-.masthead h2.ui.header {font-size: 2em; font-weight: bold; color:white}
+.masthead h2.ui.header {font-size: 2em; font-weight: bold; color:white;}
 
 /* Padding for description container */
 .ui.segment {padding: 2em 0em;}
@@ -23,8 +23,8 @@ h3.ui.header {font-size: 2em; color: white;}
 /* Font size for description */
 p {font-size: 1.2em; color: white;}
 
-/* */
-div.text.container {text-align: center}
+/* Centering bottom description container*/
+div.text.container {text-align: center;}
 
 /* Background Image */
 .masthead {background-image: url('assets/airtempleisland.jpg') !important; background-size:  cover !important;}
