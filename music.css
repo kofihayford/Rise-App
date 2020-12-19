@@ -23,5 +23,8 @@ h3.ui.header {font-size: 2em; color: white;}
 /* Font size for description */
 p {font-size: 1.2em; color: white;}
 
+/* */
+div.text.container {text-align: center}
+
 /* Background Image */
 .masthead {background-image: url('assets/airtempleisland.jpg') !important; background-size:  cover !important;}
