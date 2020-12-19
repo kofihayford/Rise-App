@@ -18,10 +18,10 @@ body {background-color: black;}
 .ui.segment {padding: 2em 0em;}
 
 /* Font size for description header */
-.ui.segment h3 {font-size: 2em;}
+h3.ui.header {font-size: 2em; color: white;}
 
 /* Font size for description */
-.ui.ui.segment p {font-size: 1.2em;}
+p {font-size: 1.2em; color: white;}
 
 /* Background Image */
 .masthead {background-image: url('assets/airtempleisland.jpg') !important; background-size:  cover !important;}
