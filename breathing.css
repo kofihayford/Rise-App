@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   background: #120078 url(assets/appa.jpg) no-repeat center center/cover;
   color: #fff;
@@ -14,6 +19,35 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
+}
+
+.music-container {
+  background-color: #a7c5eb;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: #a7c5eb;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.action-btn:focus {
+  outline: 0;
 }
 
 .container {
