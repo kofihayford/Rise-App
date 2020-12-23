@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <title>Affirmations</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="affirmations.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body id="main">
+    <!-- Create the NavBar here-->
+    <div class="NavBar">
+      <div class="ui inverted masthead center aligned segment">
+        <div class="ui container">
+          <div class="ui large secondary pointing menu">
+            <a class="item" href="index.html">Rise</a>
+            <div class="right item">
+              <a class="item" href="breathing.html">Breathing App</a>
+              <a class="item" href="index.html">My Mantras</a>
+              <a class="item" href="music.html">My Music</a>
+              <a class="active item" href="affirmations.html"
+                >Daily Affirmations</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Create a container for the music page's main content-->
+        <div class="text container">
+          <h1 class="ui inverted header" id="current-time"></h1>
+          <h2 id="quotes"></h2>
+        </div>
+        <div class="container-focus">
+          <h2 class="ui inverted header">What are you grateful for?</h2>
+          <form id="form">
+            <input
+              class="input"
+              id="input"
+              type="text"
+              placeholder="Type here"
+              autocomplete="off"
+            />
+            <ul class="affirmations" id="affirmations"></ul>
+          </form>
+          <small> Right click to delete.</small>
+        </div>
+      </div>
+    </div>
+    <!-- Link the semantic js url here -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script src="affirmations.js"></script>
+  </body>
+</html>
