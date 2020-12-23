@@ -28,3 +28,6 @@ div.text.container {text-align: center;}
 
 /* Background Image */
 .masthead {background-image: url('assets/airtempleisland.jpg') !important; background-size:  cover !important;}
+
+/* Description Box Size */
+.text.container {margin-left: 40px; margin-right: 40px; padding-bottom: 25px;}
