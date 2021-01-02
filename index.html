@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RISE</title>
-  <!-- NAVBAR-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
-    STAR
-    <div class = "titleRise"> Rise </div> 
-    <div class = "homePage"> Home Page </div> 
-    <div class = "myMantras"> My Mantras </di> 
-    <div class = "myYogaVideos"> My Yoga Videos </div> 
-</head> 
-<body>
-  <!-- FIRST SECTION WITH LARGE IMAGE AND BUTTONS-->
-      <div class="firstSection"> 
-        <img src = "" class = "mainImage"> 
-        <h1 class = "today"> Today I want: </h1>
-        <btn class = "breathingTechniqueBtn" id = "breathingTechniqueBtn"> Breathing Technique </btn>  &nbsp; | &nbsp;    
-        <btn class = "mantraBtn" id = "mantraBtn"> Mantra </btn> 
+<title>Rise</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Semantic UI CSS  -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+</head>
+
+<body id="main">
+  <!-- Create the NavBar here-->
+  <div class="NavBar">
+    <div class="ui inverted vertical masthead center aligned segment">
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="active item" href="index.html">Rise</a> 
+          <div class="right item">
+            <a class="item" href="breathing.html">Breathing App</a>
+            <a class="item" href="#mantra">My Mantras</a>
+            <a class="item" href="music.html">My Music</a>
+            <a class="item" href="affirmations.html">Daily Affirmations</a>
+            <a class="item" href="yoga.html">Yoga</a>
+          </div>
+        </div>
       </div>
-        <br> 
-        <hr> 
-<!-- SECOND SECTION WITH LARGE IMAGE AND BUTTONS-->
-    <div class = "secondSection" > 
-      <input class = "searchBar" type="text" placeholder="Search"> 
-      &nbsp; 
-        <button type="submit"><i class="search"></i></button>
+    
+    <!-- Adding Background Video -->
+    <div class="container">
+          <video id="videoBG" autoplay muted loop>
+            <source src="assets/AvatarAang.mov" type="video/mp4">
+          </video>
+        <div class="leftcontent">
+          <h1 class="ui small header">Welcome to Rise</h1>
+            <p>Your Daily Meditation App</p>
+        </div>
+        <div class="rightcontent">
+          <h1 class="ui small header">Today I want:</h1>
+            <button class="ui left attached button">Breathing Techniques</button>
+            <button class="right attached ui button" >Mantras</button>
+        </div>
+    </div>
 
-      
-        <h2>  Search Yoga Videos </h2> 
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p> 
-        <h2> Your Mantras </h2> 
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>       
-        <div> Mantra 1 <img src = "" class = "mantraImage1"> 
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing.</p> 
-        </div>
-        <div> Mantra 2 <img src = "" class = "mantraImage2"> 
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing.</p> 
-        </div>
-        <div> Mantra 3 <img src = "" class = "mantraImage3"> 
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing.</p> 
-        </div>
-        
-      
+    <!-- Yoga Search Bar Div -->
+    <div>
+      <div class="yogaBar">
+        <br>
+        <h2 class="ui huge header">Explore Yoga:</h2>
+        <p>Browse our library of images showing you the basic Yoga poses in order of increasing difficulty</p>
+            <button class="ui positive basic button"><a class="item" href="yoga.html"> Search </a></button>
+      </div>
+    </div>
+  <!-- Mantra Title -->
+    <div>
+      <div class="mantraBar">
+        <h3 class="ui huge header" id="mantra">Your Mantras</h3>
+        <p>Use these mantras as a guide to help you find inspiration, understanding, and calm during these difficult times</p>
+      </div>
+    </div>
 
-    </div> 
+    <section id="yourMantras">
+      <div class="ui four column grid container">
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/water.png">
+          </div>
+          <h4 class="ui large blue header">Water Mantra</h4>
+          <p>Water as an element is associated with emotion, imagination, and intuition. Water is both gentle and powerful. It takes the form of what surrounds it. </p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/earth.png">
+          </div>
+          <h4 class="ui large brown header">Earth Mantra</h4>
+          <p>The earth element is believed to represent pragmatism, heaviness, matter, and the terrestrial world. The Earth tribe is not known for its religious beleifs but rather its worldiness and focus on the practical concerns of life.</p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/fire.png">
+          </div>
+          <h4 class="ui large red header">Fire Mantra</h4>
+          <p> Fire is the sign of passion, assertiveness, & action. Tap into it for power to overcome obstacles and break down barriers!</p>
+        </div>
+        <div class="column">
+          <div class="elementpic">
+            <img class="ui tiny centered image" src="assets/air.png">
+          </div>
+          <h4 class="ui large header">Air Mantra</h4>
+          <p>Air is beleived to represent breath, life, communication, spirit, intelligence, creativity, and new beginnings. Focus on air to release your creative energy!</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Added JS connection to Semantic UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   
 </body>
 </html>
