@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Easing Out Transition */
+*,
+*::before,
+*::after {
+  transition: all 1.2s ease-in-out;
+}
+#navbar form * {
+  transition: none !important;
+}
+
+/* Background color */
+body {
+}
+
+.container-focus {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem !important;
+}
+
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* max-width: 100%;
+  width: 400px; */
+}
+
+.input {
+  border: none;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+}
+
+.affirmations {
+  color: black;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.affirmations li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+/* Masthead sizing */
+.masthead.segment {
+  min-height: 610px;
+}
+
+/* Font sizing for main content title */
+.masthead h1.ui.header {
+  margin-top: 2em;
+  font-size: 4em;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Font sizing for main content description */
+.masthead h2.ui.header {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Padding for description container */
+.ui.segment {
+  padding: 2em 0em;
+}
+
+/* Font size for description header */
+h3.ui.header {
+  font-size: 2em;
+  color: white;
+}
+
+/* Font size for description */
+p {
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Centering bottom description container*/
+div.text.container {
+  text-align: center;
+}
+
+/* Background Image */
+.masthead {
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover !important;
+  min-height: 100vh !important;
+}

@@ -1,3 +1,57 @@
-body {
-  background-color: red;
+/* Background color */
+.main {background-color: black !important;}
+p {font-size:20px;}
+
+/* Font positioning and sizing for main content title */
+.masthead h1.ui.header {margin-top: 0em; margin-bottom: 0em; font-size: 3em; font-weight: bold; color: white}
+
+/* Centering the Yoga search bar text & button */
+.yogaBar {text-align: center}
+.ui.input {height: 2.5em;}
+
+/* Font color */
+h2.ui.huge.header {color: white}
+h3.ui.huge.header {color: white}
+h4.ui.large.header {color: white}
+
+/* Centering the Mantra text & description */
+.mantraBar {text-align: center; margin-top: 2em; margin-bottom: 2em;}
+
+/* Positioning for Mantra Columns */
+.grid.container {text-align: center;}
+
+/* Main Content Background Video */
+    @media (min-aspect-ratio: 16/9) {
+        #videoBG {width:100%; height: auto;}
+    @media (max-aspect-ratio: 16/9) {
+        #videoBG {width:auto; height: 100%;}}}
+
+/* Video Overlay CSS - Left Title */
+#container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: no-repeat center center/cover !important;
 }
+
+
+
+.leftcontent {
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Video Overlay CSS - Right Title */
+.rightcontent {
+    position: absolute;
+    top: 28%;
+    left: 82%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10px;}

@@ -1,0 +1,163 @@
+/* Background color */
+.main {background-color: black !important;}
+p {font-size:20px;}
+
+/* Font positioning and sizing for main content title */
+.masthead h1.ui.header {margin-top: 0em; margin-bottom: 0em; font-size: 3em; font-weight: bold; color: white}
+
+/* Font color */
+h2.ui.huge.header {color: white}
+h3.ui.huge.header {color: white}
+h4.ui.large.header {color: white}
+
+/* Main Content Background Video */
+    @media (min-aspect-ratio: 16/9) {
+        #videoBG {width:100%; height: auto;}
+    @media (max-aspect-ratio: 16/9) {
+        #videoBG {width:auto; height: 100%;}}}
+
+/* Video Overlay CSS - Left Title */
+#container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+} 
+.imgtitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    background-color: rgb(201, 157, 140);
+    border-radius: 1em;
+    border: black;
+    border-style: solid;
+}
+.midcontent {
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10px;
+    color: rgb(65, 202, 65);
+    text-emphasis: bold;
+}
+.glow {
+        color: rgb(117, 72, 72);
+        text-align: center;
+        font-style: italic;
+        font-size: 13px;
+        border-radius: 1em;
+        -webkit-animation: glow 3s ease-in-out infinite alternate;
+        -moz-animation: glow 3s ease-in-out infinite alternate;
+        animation: glow 3s ease-in-out infinite alternate;
+        padding: 10px; 
+      }
+@-webkit-keyframes glow {
+from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+to {
+    text-shadow: 0 0 15px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}}
+* {box-sizing:border-box}
+/* CODE FOR THE SLIDESHOW CONTAINER */ /* CODE FOR THE SLIDESHOW CONTAINER */ /* CODE FOR THE SLIDESHOW CONTAINER */ 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: 0;
+  margin: auto;
+  top: 32%;
+  left: 25%;
+  min-height: 100vh;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position:absolute ;
+  top: 45%;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(233, 10, 10);
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0% ;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #020101;
+  font-size: 15px;
+  padding: 8px;
+  position:static ;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.5);
+  border-radius: 1em;
+  border-color: cornsilk;
+  border-style: solid;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  top: 0;
+  text-align: center;
+  ;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: static ;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3 .5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+img {
+  border: 5px;
+  border-radius: 1em;
+  border-color: coral;
+  border-style: solid;
+  margin-bottom: 15px;
+  text-align: center
+}
