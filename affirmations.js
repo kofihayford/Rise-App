@@ -15,12 +15,16 @@ if (affirmations) {
 const clientID = "&client_id=lf2gVZLI3hnn28jfnInXEv6doKCeRvmUaMeJsbplHnI";
 
 ////// Implement current Time
-$("#current-time").text(
-  luxon.DateTime.local().toLocaleString({
-    hour: "2-digit",
-    minute: "2-digit",
-  })
-);
+function getTime() {
+  $("#current-time").text(
+    luxon.DateTime.local().toLocaleString({
+      hour: "2-digit",
+      minute: "2-digit",
+    })
+  );
+}
+
+setInterval(getTime, 1000);
 
 //Api call for quotes
 function getQuotes() {
@@ -88,6 +92,7 @@ form.addEventListener("submit", (e) => {
 
 function init() {
   getQuotes();
+  getTime();
 }
 
 window.onload = function () {
