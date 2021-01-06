@@ -36,7 +36,7 @@ Our goal with this Web Application was to create a safe space for people to prac
 
 ### Clone the repository locally
 
-1. Clone the respository to your machine: `git clone https://github.com/kofihayford/Wellness-App.git`
+1. Clone the respository to your machine: `git clone https://github.com/kofihayford/Rise-App.git`
 
 ---
 
