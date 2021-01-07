@@ -42,8 +42,8 @@ Our goal with this Web Application was to create a safe space for people to prac
 
 ### Project Links:
 
-1. [GitHub Repo]()
-2. [Github Live]()
+1. [GitHub Repo](https://github.com/kofihayford/Rise-App)
+2. [Github Live](https://kofihayford.github.io/Rise-App/)
 
 ---
 
